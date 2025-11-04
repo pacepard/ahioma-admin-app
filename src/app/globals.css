@@ -172,13 +172,13 @@ layer(base);
 }
 
 @layer base {
-  * {
+  /* * {
     font-family: "Poppins", sans-serif;
-    /* FIX: Apply default border width using Tailwind utility */
+   
     @apply border;
-    /* FIX: Apply border color directly using raw CSS and the variable to prevent utility conflict */
+   
     border-color: hsl(var(--border));
-  }
+  } */
 
   body {
     @apply bg-background text-foreground print:bg-white print:text-black;

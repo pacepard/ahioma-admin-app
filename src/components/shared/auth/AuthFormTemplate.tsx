@@ -8,19 +8,19 @@ type Props = {
 export default function AuthFormTemplate({ image, children }: Props) {
   return (
     <section>
-      <div className="p-6 min-h-dvh flex items-center">
-        <div className="bg-popover w-full max-w-md lg:max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-lg shadow-xl">
-          <div className="relative min-h-64 md:min-h-72 lg:min-h-112">
+      <div className="overflow-hidden p-10">
+        <div className="w-full flex  mx-auto px-4  sm:px-8 xl:px-0">
+          <div className="hidden lg:block p-16 lg:w-1/2 relative">
             <Image
               src={image}
               alt=""
               placeholder="blur"
-              className="w-full object-cover object-center brightness-90"
+              className="h-full rounded-2xl  w-full bg-cover bg-center overflow-hidden relative"
               fill
             />
           </div>
 
-          <div className="p-6 md:p-12 flex items-center">{children}</div>
+          <div className="max-w-[500px] w-full mx-auto rounded-xl bg-white shadow-1 p-4 sm:p-7.5 xl:p-11">{children}</div>
         </div>
       </div>
     </section>
