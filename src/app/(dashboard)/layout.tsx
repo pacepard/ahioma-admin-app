@@ -17,10 +17,10 @@ export default async function RootLayout({
     <SidebarProvider defaultOpen={defaultOpen}>
       <AppSidebar />
 
-      <div className="flex flex-col flex-grow min-w-0">
+      <div className="flex flex-col grow min-w-0">
         <Header />
 
-        <main className="pt-6 pb-8 flex-grow print:!py-0">
+        <main className="pt-6 pb-8 grow print:py-0!">
           <Container>{children}</Container>
         </main>
       </div>

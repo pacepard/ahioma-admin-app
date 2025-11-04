@@ -113,7 +113,7 @@ export default function DataTable<TData>({
       {/* pagination */}
       {pagination.items > 0 && (
         <div className="flex flex-col md:flex-row items-center justify-between gap-3.5 p-4 bg-popover text-muted-foreground">
-          <Typography className="text-sm flex-shrink-0 uppercase font-medium">
+          <Typography className="text-sm shrink-0 uppercase font-medium">
             Showing{" "}
             {Math.max((pagination.current - 1) * pagination.limit + 1, 1)} to{" "}
             {Math.min(pagination.current * pagination.limit, pagination.items)}{" "}

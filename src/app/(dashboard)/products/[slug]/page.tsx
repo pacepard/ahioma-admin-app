@@ -43,7 +43,7 @@ export default async function ProductDetails({ params: { slug } }: PageParams) {
         <PageTitle className="lg:mb-10">Product Details</PageTitle>
 
         <div className="flex flex-col gap-6 lg:gap-8 md:flex-row mb-6">
-          <div className="flex-shrink-0 w-full max-w-80 mx-auto md:mx-0 md:max-w-72  xl:max-w-80">
+          <div className="shrink-0 w-full max-w-80 mx-auto md:mx-0 md:max-w-72  xl:max-w-80">
             <Image
               src={product.image_url}
               alt={product.name}
@@ -66,7 +66,7 @@ export default async function ProductDetails({ params: { slug } }: PageParams) {
                     product.stock > 0 ? "selling" : "out-of-stock"
                   ]
                 }
-                className="flex-shrink-0 text-xs"
+                className="shrink-0 text-xs"
               >
                 {product.stock > 0 ? "In stock" : "Out of stock"}
               </Badge>

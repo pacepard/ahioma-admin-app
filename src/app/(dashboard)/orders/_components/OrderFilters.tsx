@@ -132,7 +132,7 @@ export default function OrderFilters() {
             type="button"
             onClick={handleOrdersDownload}
             disabled={isPending}
-            className="h-12 flex-shrink-0 md:basis-1/4"
+            className="h-12 shrink-0 md:basis-1/4"
           >
             Download{" "}
             {isPending ? (
@@ -159,14 +159,14 @@ export default function OrderFilters() {
           </div>
 
           <div className="flex flex-wrap sm:flex-nowrap gap-4 md:basis-[30%]">
-            <Button type="submit" size="lg" className="h-12 flex-grow">
+            <Button type="submit" size="lg" className="h-12 grow">
               Filter
             </Button>
             <Button
               type="button"
               size="lg"
               variant="secondary"
-              className="h-12 flex-grow"
+              className="h-12 grow"
               onClick={handleReset}
             >
               Reset

@@ -54,7 +54,7 @@ export default function NotificationItem({ notification }: Props) {
           alt={notification.title}
           width={30}
           height={30}
-          className="size-[1.875rem] rounded-full flex-shrink-0 self-start mt-1.5 sm:mt-0 sm:self-center object-cover"
+          className="size-7.5 rounded-full shrink-0 self-start mt-1.5 sm:mt-0 sm:self-center object-cover"
         />
 
         <div className="flex flex-col">
@@ -67,11 +67,11 @@ export default function NotificationItem({ notification }: Props) {
 
           <div className="flex flex-col-reverse items-start sm:items-center sm:flex-row gap-x-2 gap-y-2">
             {notification.type === "low_stock" ? (
-              <Badge variant="destructive" className="flex-shrink-0">
+              <Badge variant="destructive" className="shrink-0">
                 Stock Out
               </Badge>
             ) : (
-              <Badge variant="success" className="flex-shrink-0">
+              <Badge variant="success" className="shrink-0">
                 New Order
               </Badge>
             )}
@@ -86,7 +86,7 @@ export default function NotificationItem({ notification }: Props) {
       <Button
         variant="ghost"
         size="icon"
-        className="flex-shrink-0 w-8 h-8"
+        className="shrink-0 w-8 h-8"
         disabled={isPending}
         onClick={() => handleDelete()}
       >

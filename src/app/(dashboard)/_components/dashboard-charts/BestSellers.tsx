@@ -19,7 +19,7 @@ export default function BestSellers() {
       </Typography>
 
       <CardContent className="pb-2">
-        <div className="relative h-[18.625rem]">
+        <div className="relative h-74.5">
           {mounted ? (
             <Pie
               data={{

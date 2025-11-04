@@ -160,7 +160,7 @@ export const skeletonColumns: SkeletonColumn[] = [
   },
   {
     header: "description",
-    cell: <Skeleton className="w-[32rem] h-8" />,
+    cell: <Skeleton className="w-lg h-8" />,
   },
   {
     header: "published",

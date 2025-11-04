@@ -52,7 +52,7 @@ export const ImageDropzone = forwardRef<
       <div
         {...getRootProps({
           className: cn(
-            "border-2 border-dashed rounded-lg p-6 text-center transition-colors duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 ring-offset-background",
+            "border-2 border-dashed rounded-lg p-6 text-center transition-colors duration-300 cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 ring-offset-background",
             isDragActive
               ? "border-primary/80 bg-black/10 dark:bg-white/10"
               : "border-input"

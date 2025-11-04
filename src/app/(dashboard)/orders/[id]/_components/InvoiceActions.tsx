@@ -38,7 +38,7 @@ export function InvoiceActions({ order }: { order: OrderDetails }) {
         </Button>
       </div>
 
-      <div className="absolute -z-[1] opacity-0 -top-[9999px] -left-[9999px]">
+      <div className="absolute -z-1 opacity-0 -top-[9999px] -left-[9999px]">
         <InvoicePdfTemplate order={order} />
       </div>
     </>

@@ -16,7 +16,7 @@ type FormSheetBodyProps = {
 };
 
 export const FormSheetBody = ({ children }: FormSheetBodyProps) => (
-  <div className="flex-grow overflow-y-auto p-6 sm:p-10">{children}</div>
+  <div className="grow overflow-y-auto p-6 sm:p-10">{children}</div>
 );
 
 type FormSheetHeaderProps = {
@@ -24,14 +24,14 @@ type FormSheetHeaderProps = {
 };
 
 export const FormSheetHeader = ({ children }: FormSheetHeaderProps) => (
-  <SheetHeader className="flex-shrink-0 flex-row gap-4 justify-between text-left bg-popover p-6 border-b">
+  <SheetHeader className="shrink-0 flex-row gap-4 justify-between text-left bg-popover p-6 border-b">
     {children}
 
     <SheetClose asChild>
       <Button
         variant="ghost"
         size="icon"
-        className="text-foreground flex-shrink-0"
+        className="text-foreground shrink-0"
       >
         <X className="size-6" />
       </Button>
@@ -44,7 +44,7 @@ type FormSheetFooterProps = {
 };
 
 export const FormSheetFooter = ({ children }: FormSheetFooterProps) => (
-  <SheetFooter className="flex-shrink-0 bg-popover border-t sm:flex-row-reverse">
+  <SheetFooter className="shrink-0 bg-popover border-t sm:flex-row-reverse">
     {children}
 
     <SheetClose asChild>

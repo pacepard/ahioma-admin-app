@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function NotFoundPage() {
   return (
     <div className="w-full min-h-svh flex">
-      <main className="w-full flex flex-grow">
+      <main className="w-full flex grow">
         <Container>
           <NotFound />
         </Container>
