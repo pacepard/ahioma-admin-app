@@ -86,7 +86,7 @@ export const getColumns = ({
         return (
           <Badge
             variant={ProductBadgeVariants[status]}
-            className="flex-shrink-0 text-xs"
+            className="shrink-0 text-xs"
           >
             {status === "selling" ? "Selling" : "Out of stock"}
           </Badge>

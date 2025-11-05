@@ -28,7 +28,7 @@ export default function Profile() {
   return (
     <div className="flex ml-2">
       <DropdownMenu modal={false}>
-        <DropdownMenuTrigger className="rounded-full ring-offset-background focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+        <DropdownMenuTrigger className="rounded-full ring-offset-background focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2">
           <Avatar>
             <AvatarImage
               src={profile?.image_url ?? undefined}
@@ -47,7 +47,7 @@ export default function Profile() {
           <DropdownMenuItem asChild>
             <Link
               href="/"
-              className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide !cursor-pointer"
+              className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide cursor-pointer!"
             >
               <LayoutGrid className="mr-3 size-5" /> Dashboard
             </Link>
@@ -56,7 +56,7 @@ export default function Profile() {
           <DropdownMenuItem asChild>
             <Link
               href="/edit-profile"
-              className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide !cursor-pointer"
+              className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide cursor-pointer!"
             >
               <Settings className="mr-3 size-5" /> Edit Profile
             </Link>
@@ -66,7 +66,7 @@ export default function Profile() {
             <DropdownMenuItem asChild>
               <button
                 type="submit"
-                className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide !cursor-pointer"
+                className="w-full justify-start py-3.5 pl-3 pr-8 tracking-wide cursor-pointer!"
               >
                 <LogOut className="mr-3 size-5" /> Log Out
               </button>

@@ -41,7 +41,7 @@ export default function InvoicePdfTemplate({ order }: { order: OrderDetails }) {
             {/* positioning and translate is to rectify html2canvas incorrect rendering */}
             <Badge
               variant={OrderBadgeVariants[order.status]}
-              className="flex-shrink-0 text-xs capitalize translate-y-1.5 relative"
+              className="shrink-0 text-xs capitalize translate-y-1.5 relative"
             >
               <span className="text-transparent">{order.status}</span>
               <span className="absolute left-2.5 capitalize bottom-2">
@@ -53,7 +53,7 @@ export default function InvoicePdfTemplate({ order }: { order: OrderDetails }) {
 
         <div className="flex flex-col text-sm gap-y-0.5 text-right text-black">
           <div className="flex items-end justify-end gap-x-1">
-            <FaBagShopping className="size-6 text-primary flex-shrink-0" />
+            <FaBagShopping className="size-6 text-primary shrink-0" />
 
             {/* margin bottom style is to rectify html2canvas incorrect rendering */}
             <Typography component="span" variant="h2" className="mb-1.5">
@@ -65,7 +65,7 @@ export default function InvoicePdfTemplate({ order }: { order: OrderDetails }) {
             2 Lawson Avenue, California, United States
           </Typography>
           <Typography component="p">+1 (212) 456-7890</Typography>
-          <Typography component="p" className="break-words">
+          <Typography component="p" className="wrap-break-word">
             ecommerceadmin@gmail.com
           </Typography>
           <Typography component="p">
@@ -114,7 +114,7 @@ export default function InvoicePdfTemplate({ order }: { order: OrderDetails }) {
 
           <div className="flex flex-col text-sm gap-y-0.5">
             <Typography component="p">{order.customers.name}</Typography>
-            <Typography component="p" className="break-words">
+            <Typography component="p" className="wrap-break-word">
               {order.customers.email}
             </Typography>
             {order.customers.phone && (

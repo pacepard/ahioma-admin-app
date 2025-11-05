@@ -45,7 +45,7 @@ export default function CouponActions({
                     size="lg"
                     type="button"
                     disabled={!Boolean(Object.keys(rowSelection).length)}
-                    className="sm:flex-grow xl:flex-grow-0 transition-opacity duration-300"
+                    className="sm:grow xl:grow-0 transition-opacity duration-300"
                   >
                     <PenSquare className="mr-2 size-4" /> Bulk Action
                   </Button>
@@ -68,7 +68,7 @@ export default function CouponActions({
                   size="lg"
                   type="button"
                   disabled={!Boolean(Object.keys(rowSelection).length)}
-                  className="sm:flex-grow xl:flex-grow-0 transition-opacity duration-300"
+                  className="sm:grow xl:grow-0 transition-opacity duration-300"
                 >
                   <Trash2 className="mr-2 size-4" />
                   Delete
@@ -88,7 +88,7 @@ export default function CouponActions({
                   <Button
                     variant="default"
                     size="lg"
-                    className="sm:flex-grow xl:flex-grow-0"
+                    className="sm:grow xl:grow-0"
                   >
                     <Plus className="mr-2 size-4" /> Add Coupon
                   </Button>

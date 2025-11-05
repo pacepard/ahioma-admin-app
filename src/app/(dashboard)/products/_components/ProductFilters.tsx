@@ -136,14 +136,14 @@ export default function ProductFilters() {
         </Select>
 
         <div className="flex flex-wrap sm:flex-nowrap gap-4 md:basis-[30%]">
-          <Button type="submit" size="lg" className="flex-grow">
+          <Button type="submit" size="lg" className="grow">
             Filter
           </Button>
           <Button
             type="button"
             size="lg"
             variant="secondary"
-            className="flex-grow"
+            className="grow"
             onClick={handleReset}
           >
             Reset

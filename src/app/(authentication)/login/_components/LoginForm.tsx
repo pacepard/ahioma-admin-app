@@ -125,10 +125,10 @@ export default function LoginForm() {
       <AuthProviders />
 
       <div className="flex flex-wrap justify-between gap-4 w-full">
-        <Typography variant="a" href="/forgot-password" className="md:!text-sm">
+        <Typography variant="a" href="/forgot-password" className="md:text-sm!">
           Forgot password?
         </Typography>
-        <Typography variant="a" href="/signup" className="md:!text-sm">
+        <Typography variant="a" href="/signup" className="md:text-sm!">
           Create an account
         </Typography>
       </div>

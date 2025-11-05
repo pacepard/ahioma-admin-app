@@ -26,11 +26,11 @@ function FormSwitch<TFormData extends FieldValues>({
       name={name}
       render={({ field }) => (
         <FormItem className="flex flex-col md:flex-row md:gap-x-4 md:space-y-0">
-          <FormLabel className="md:flex-shrink-0 md:w-1/4 md:mt-2 leading-snug">
+          <FormLabel className="md:shrink-0 md:w-1/4 md:mt-2 leading-snug">
             {label}
           </FormLabel>
 
-          <div className="space-y-2 w-full !mt-2">
+          <div className="space-y-2 w-full mt-2!">
             <FormControl>
               <Switch checked={field.value} onCheckedChange={field.onChange} />
             </FormControl>

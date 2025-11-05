@@ -43,14 +43,14 @@ export default function CustomerFilters() {
         />
 
         <div className="flex flex-wrap sm:flex-nowrap gap-4 md:basis-1/2">
-          <Button type="submit" size="lg" className="flex-grow">
+          <Button type="submit" size="lg" className="grow">
             Filter
           </Button>
           <Button
             type="button"
             size="lg"
             variant="secondary"
-            className="flex-grow"
+            className="grow"
             onClick={handleReset}
           >
             Reset

@@ -67,7 +67,7 @@ export const getColumns = ({
         return (
           <Badge
             variant={OrderBadgeVariants[status]}
-            className="flex-shrink-0 text-xs capitalize"
+            className="shrink-0 text-xs capitalize"
           >
             {status}
           </Badge>

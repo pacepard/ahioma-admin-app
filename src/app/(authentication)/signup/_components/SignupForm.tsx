@@ -126,12 +126,12 @@ export default function SignupForm() {
                     />
                   </FormControl>
 
-                  <FormLabel className="!m-0">
+                  <FormLabel className="m-0!">
                     I agree to the{" "}
                     <Typography
                       variant="a"
                       href="#"
-                      className="md:!text-sm font-medium"
+                      className="md:text-sm! font-medium"
                     >
                       privacy policy
                     </Typography>
@@ -153,7 +153,7 @@ export default function SignupForm() {
       <AuthProviders authType="Signup" />
 
       <div>
-        <Typography variant="a" href="/login" className="md:!text-sm">
+        <Typography variant="a" href="/login" className="md:text-sm!">
           Already have an account? Login
         </Typography>
       </div>

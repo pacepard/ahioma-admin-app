@@ -34,9 +34,9 @@ export default async function Notifications() {
           align="end"
           alignOffset={-60}
           asChild
-          className="flex flex-col p-0 w-[18rem] sm:w-[22rem]"
+          className="flex flex-col p-0 w-[18rem] sm:w-88"
         >
-          <ScrollArea type="auto" className="h-full max-h-[22rem]">
+          <ScrollArea type="auto" className="h-full max-h-88">
             <NotificationContent staffId={staffId} />
           </ScrollArea>
         </PopoverContent>

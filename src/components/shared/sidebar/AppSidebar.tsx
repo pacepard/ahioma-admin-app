@@ -28,7 +28,7 @@ export default function AppSidebar() {
                 "font-bold text-2xl px-6 gap-2 justify-start min-h-fit hover:bg-transparent"
               )}
             >
-              <FaBagShopping className="size-6 text-primary mb-1 flex-shrink-0" />
+              <FaBagShopping className="size-6 text-primary mb-1 shrink-0" />
               <Typography component="span">Zorvex</Typography>
             </Link>
 
@@ -40,7 +40,7 @@ export default function AppSidebar() {
                     href={navItem.url}
                     className={cn(
                       buttonVariants({ variant: "ghost" }),
-                      "relative w-full justify-start px-5 py-4 gap-x-2.5 [&_svg]:size-6 [&_svg]:flex-shrink-0 font-medium text-base focus-visible:bg-accent focus-visible:text-accent-foreground",
+                      "relative w-full justify-start px-5 py-4 gap-x-2.5 [&_svg]:size-6 [&_svg]:shrink-0 font-medium text-base focus-visible:bg-accent focus-visible:text-accent-foreground",
                       pathname === navItem.url &&
                         "bg-accent text-accent-foreground after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-1 after:bg-primary after:rounded-r-lg"
                     )}
@@ -58,7 +58,7 @@ export default function AppSidebar() {
                 type="submit"
                 className="w-full py-3 text-base whitespace-nowrap"
               >
-                <LogOut className="size-6 mr-3 flex-shrink-0" />
+                <LogOut className="size-6 mr-3 shrink-0" />
                 Log out
               </Button>
             </form>
